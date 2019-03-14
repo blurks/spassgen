@@ -7,7 +7,7 @@
  * TODO: check if the gen_pass and l_shift_array methods work   *
  *       perfectly correct.                                     *
  *                                                              *
- * written by trk                                               *
+ * written by blurks                                            *
  *                                                              *
  ****************************************************************/
 
@@ -19,11 +19,6 @@
 #include <getopt.h> /* getopt */
 #include <assert.h> /* assert */
 
-/* following chars will be printed bold */
-#define BOLD "\033[1m"
-/* following chars won't be printed bold */
-#define NOBOLD "\033[0m"
-
 /* Character sets */
 char const* const ascii = " !\"#$%&'()*+,-./0123456789:;<=>?@"
   "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`"
@@ -34,7 +29,7 @@ char const* const num = "1234567890";
 char const* const alphanum ="abcdefghijklmnopqrstuvwxyz"
   "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 
-/* linux kernel's random number generator interfaces */
+/* linux kernel's random number generator interface files */
 char const* const dev_random = "/dev/random";
 char const* const dev_urandom = "/dev/urandom";
 
